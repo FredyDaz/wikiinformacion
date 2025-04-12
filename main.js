@@ -3,7 +3,19 @@ const categorias = {
   "Física 1": [
     {
       nombre: "Movimiento rectilíneo",
-      descripcion: "Es el movimiento en línea recta con velocidad constante o variable.",
+      descripcion: `<p>Es el movimiento en línea recta. Existen dos tipos:</p>
+                        <ul>
+                          <li><strong>MRU</strong>: velocidad constante</li>
+                          <li><strong>MRUA</strong>: velocidad variable por aceleración constante</li>
+                        </ul>
+                   <p>Fórmula básica: <code>v = d / t</code></p>
+                   <p>Donde:</p>
+                   <ul>
+                     <li><code>v</code> es la velocidad.</li>
+                     <li><code>d</code> es la distancia.</li>
+                     <li><code>t</code> es el tiempo.</li>
+                   </ul>
+                   <p>Ejemplo de Ejercicios<p/>`,
       imagen: "https://www.neurochispas.com/wp-content/uploads/2024/05/Formula-de-movimiento-rectilineo-uniforme.png"
     },
     {
@@ -89,13 +101,11 @@ function mostrarDetalle(tema) {
   detailContent.innerHTML = `
     <h2>${tema.nombre}</h2>
     <img src="${tema.imagen}" alt="${tema.nombre}" style="max-width: 400px; height: 250px; object-fit: contain; margin-bottom: 1rem; border-radius: 10px;">
-    <p>${tema.descripcion}</p>
+    ${tema.descripcion}
   `;
   topicDetail.classList.add("show");
   topicList.style.display = "none";
 }
-
-
 
 // Buscar temas
 searchInput.addEventListener("input", () => {
