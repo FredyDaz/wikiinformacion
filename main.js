@@ -16,7 +16,7 @@ const categorias = {
     {
       nombre: "Leyes de Newton",
       descripcion: "Son las tres leyes fundamentales que describen el movimiento de los cuerpos.",
-      imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Newton%27s_laws.svg/320px-Newton%27s_laws.svg.png"
+      imagen: "https://www.abc.com.py/resizer/zH89j-8W6c8JLxHz_CSUeZeswWY=/arc-anglerfish-arc2-prod-abccolor/public/YULPJS3S4VF6DCSG35GETXUXQU.jpg"
     },
     {
       nombre: "Trabajo y energía",
