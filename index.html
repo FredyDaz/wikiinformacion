@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enciclopedia de Física</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Enciclopedia de Física</h1>
+  </header>
+
+  <main class="main-layout">
+    <aside id="sidebar">
+      <h2>Categorías</h2>
+      <div id="category-menu" class="category-buttons"></div>
+    </aside>
+
+    <section class="content">
+      <input type="text" id="search" placeholder="Buscar tema...">
+      
+      <section id="topic-list"></section>
+      
+      <section id="topic-detail" class="hidden">
+        <button id="back-btn">← Regresar</button>
+        <div id="detail-content"></div>
+      </section>
+      
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Enciclopedia de Física</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
